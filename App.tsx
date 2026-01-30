@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+// Fix: Use namespace import for react-router-dom to resolve module export errors.
+import * as ReactRouterDOM from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -11,22 +12,22 @@ import ContactPage from './pages/ContactPage';
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
+    <ReactRouterDOM.BrowserRouter>
       <div className="flex flex-col min-h-screen bg-transparent text-neutral-800">
         <Header />
         <main className="flex-grow container mx-auto px-4 py-8 md:py-12">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/search" element={<SearchPage />} />
-            <Route path="/report" element={<ReportPage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="*" element={<Navigate to="/" />} />
-          </Routes>
+          <ReactRouterDOM.Routes>
+            <ReactRouterDOM.Route path="/" element={<HomePage />} />
+            <ReactRouterDOM.Route path="/search" element={<SearchPage />} />
+            <ReactRouterDOM.Route path="/report" element={<ReportPage />} />
+            <ReactRouterDOM.Route path="/about" element={<AboutPage />} />
+            <ReactRouterDOM.Route path="/contact" element={<ContactPage />} />
+            <ReactRouterDOM.Route path="*" element={<ReactRouterDOM.Navigate to="/" />} />
+          </ReactRouterDOM.Routes>
         </main>
         <Footer />
       </div>
-    </HashRouter>
+    </ReactRouterDOM.BrowserRouter>
   );
 };
 
