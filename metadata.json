@@ -1,0 +1,5 @@
+{
+  "name": "ScamGuard - Scam Detection & Reporting",
+  "description": "A comprehensive platform to detect and report scams. Users can search for known scammers by various identifiers and submit reports to protect the community. The platform uses AI to provide personalized safety tips.",
+  "requestFramePermissions": []
+}
