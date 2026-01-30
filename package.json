@@ -1,25 +1,12 @@
+
 {
-  "name": "scamguard---scam-detection-&-reporting",
+  "name": "scamguard-app",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "description": "A comprehensive platform to detect and report scams.",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "echo \"This is a static site. No build is needed.\""
   },
-  "dependencies": {
-    "@google/genai": "^1.38.0",
-    "react": "^19.2.4",
-    "@heroicons/react": "^2.2.0",
-    "react-router-dom": "^7.13.0",
-    "react-dom": "^19.2.4",
-    "react-hook-form": "^7.71.1"
-  },
-  "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
-  }
+  "author": "",
+  "license": "ISC"
 }
